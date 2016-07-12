@@ -28,6 +28,11 @@ phpsls is a Secure Login System for any website
 
 - please send your suggestions and reports to : mohamed@elbahja.me
 
+## Credits
+
+- [PHPMailer!](https://github.com/PHPMailer/PHPMailer)
+- [ Login Form!](https://codepen.io/ace-subido/pen/Cuiep)
+
 ## licence
 
 - GNU General Public License
