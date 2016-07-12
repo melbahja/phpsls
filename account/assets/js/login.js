@@ -1,18 +1,22 @@
 $(document).ready(function() {
 
-      $("#forgot").validate({
+      $("#login").validate({
         rules: {
           email: {
             required: true,
             email: true
+          },
+          password: {
+            required: true,
+            minlength: 6
           }
         },
 
         submitHandler: function() {
-          var data = $('#forgot').serialize();
+          var data = $('#login').serialize();
           $.ajax({
             type: 'POST',
-            url: 'submit/forgot.php',
+            url: 'submit/login.php',
             data: data,
 
             beforeSend: function() {
@@ -23,13 +27,12 @@ $(document).ready(function() {
 
             success: function(r) {
               if (r === 'success') {
-                $("#btn-submit").remove();
-                $("#forgotdata").remove();
-                $("#form-message").html('<div class="alert btn-info"> please check your email </div>');
+                $("#btn-submit").html( r + ', Redirect... ');
+                setTimeout(window.location.href = redirect_to, 5000);
               } else {
                   $("#form-message").fadeIn(0, function() {
                   $("#form-message").html('<div class="alert btn-danger"> ' + r + ' </div>');
-                  $("#btn-submit").html(' Get new password');
+                  $("#btn-submit").html(' Login');
                   $("#btn-submit").attr('disabled', false);
                 });
               }
