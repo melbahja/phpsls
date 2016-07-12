@@ -26,6 +26,7 @@ $(document).ready(function() {
                 $("#btn-submit").remove();
                 $("#forgotdata").remove();
                 $("#form-message").html('<div class="alert btn-info"> please check your email </div>');
+                $("#form-message").show();
               } else {
                   $("#form-message").fadeIn(0, function() {
                   $("#form-message").html('<div class="alert btn-danger"> ' + r + ' </div>');
