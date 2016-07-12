@@ -6,7 +6,7 @@ require_once(SLS_DIR . '/global_sls.php');
 
 if($sls->is_login() === true ) {
 
-echo ' <br/>';
+echo '<a href="account/logout.php">logout</a> <br/>';
 
 echo '<h2>session:</h2><br/>';
 
