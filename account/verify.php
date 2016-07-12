@@ -89,12 +89,14 @@ if($req === true) {
   <div class="form-signin">
      <h2>Account verification</h2>
 <?php 
+$showform = true;
 if($sls->session->_verify_msg !== false) {
     echo '<div class="alert btn-info">'.$sls->session->_verify_msg .'</div>'; 
     $sls->session->del('_verify_msg');
+    $showform = false;
 }
 
-if($sls->session->_verify_msg === false && $token_not_exists === true) { ?>
+if($showform === true && $token_not_exists === true) { ?>
      <div class="alert btn-info"><?=$message;?></div> 
           <form id="verify" accept-charset="utf-8" method="POST">       
             <div class="form-group">
