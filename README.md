@@ -19,7 +19,7 @@ phpsls is a Secure Login System for any website
 
 - PHP version >= 5.4
 - Mysqli
-- mail function enable
+- Mail function enable
 
 ## Version 
 - 1.0 beta
