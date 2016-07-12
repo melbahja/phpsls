@@ -30,8 +30,8 @@ phpsls is a Secure Login System for any website
 
 ## Credits
 
-- [PHPMailer!](https://github.com/PHPMailer/PHPMailer)
-- [ Login Form!](https://codepen.io/ace-subido/pen/Cuiep)
+- [PHPMailer](https://github.com/PHPMailer/PHPMailer)
+- [Login Form](https://codepen.io/ace-subido/pen/Cuiep)
 
 ## licence
 
