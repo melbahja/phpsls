@@ -21,7 +21,7 @@ define('DB_NAME', 'Mydb'); // database name
  * get your site key and secret key here : https://www.google.com/recaptcha/intro/index.html
  */
 define('SITE_KEY', '6Le3xCMTAAAAAHuJCb5nMlbAzYyDDDZoTovjRSOG');
-define('SECRET_KEY', '6Le3xCMTAAAAAOBSiQ55MwApTDIQJ5rfPaS9JLVO');
+define('SECRET_KEY', '6Le3xCMTAAAAAOBSiQ55MwApTDIQJ5raS9JLVO');
 
 $mailer_config = array(
 		'setFrom' => 'no-replay@example.com', //  email
