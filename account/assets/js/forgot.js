@@ -25,6 +25,7 @@ $(document).ready(function() {
               if (r === 'success') {
                 $("#btn-submit").remove();
                 $("#forgotdata").remove();
+                $(".alert").remove();
                 $("#form-message").html('<div class="alert btn-info"> please check your email </div>');
                 $("#form-message").show();
               } else {
