@@ -6,7 +6,7 @@ require_once(SLS_DIR . '/global_sls.php');
 
 if($sls->is_login() === true ) {
 
-echo 'your are login <br/>';
+echo ' <br/>';
 
 echo '<h2>session:</h2><br/>';
 
