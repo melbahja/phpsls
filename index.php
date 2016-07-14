@@ -44,5 +44,6 @@ echo 'username : ' . $sls->session->username . '<br/>';
 } else {
 
 $sls->redirect(WEB_URL . '/login.php');
+exit;
 
 }
