@@ -1,6 +1,9 @@
 <?php
 namespace SlsCore\Data;
 
+/**
+ * Form CSRF Token Generator
+ */
 class Form
 {
 	protected $form_id  = 'Id';
