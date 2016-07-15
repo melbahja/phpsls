@@ -1,5 +1,5 @@
 # phpsls
-phpsls is a Secure Login System for any website
+PHPSLS is a Secure Login System for any website
 
 ## features
 
@@ -37,5 +37,5 @@ phpsls is a Secure Login System for any website
 
 ## licence
 
-- GNU General Public License
+- [GNU General Public License (GPL)](http://www.opensource.org/licenses/gpl-license.html)
 
