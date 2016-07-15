@@ -24,7 +24,7 @@ define('SITE_KEY', '6Le3xCMTAAAAAHuJCb5nMlbAzYyDDDZoTovjRSOG');
 define('SECRET_KEY', '6Le3xCMTAAAAAOBSiQ55MwApTDIQJ5raS9JLVO');
 
 $mailer_config = array(
-		'setFrom' => 'no-replay@example.com', //  email
+		'setFrom' => 'accounts@example.com', //  email
 		'replayTo' => 'support@example.com', //  support mail 
 		'siteName' => 'PHPSlsSite', // your website name
 	);
