@@ -25,6 +25,6 @@ define('SECRET_KEY', '6Le3xCMTAAAAAOBSiQ55MwApTDIQJ5raS9JLVO');
 
 $mailer_config = array(
 		'setFrom' => 'accounts@example.com', //  email
-		'replayTo' => 'support@example.com', //  support mail 
+		'replyTo' => 'support@example.com', //  support mail 
 		'siteName' => 'PHPSlsSite', // your website name
 	);
