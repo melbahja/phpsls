@@ -130,7 +130,7 @@ if($sls->is_login() === true) {
       require_once SLS_DIR . '/libs/mailer/class.phpmailer.php';
       $mail = new PHPMailer();  
       $mail->setFrom($mailer_config['setFrom'], $mailer_config['siteName']);
-      $mail->addReplyTo($mailer_config['replayTo'], $mailer_config['siteName']);
+      $mail->addReplyTo($mailer_config['replyTo'], $mailer_config['siteName']);
       $mail->addAddress($email, $db->escape($_POST['fname']) . ' ' . $db->escape($_POST['lname']));
       $mail->Subject = $mailer_config['siteName'] . ' account verification for ' . $username;
       $mail->isHTML(true);
