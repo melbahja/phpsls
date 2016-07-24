@@ -68,7 +68,7 @@ if($sls->is_login() === true) {
           require_once SLS_DIR . '/libs/mailer/class.phpmailer.php';
           $mail = new PHPMailer(true);  
           $mail->setFrom($mailer_config['setFrom'], $mailer_config['siteName']);
-          $mail->addReplyTo($mailer_config['replayTo'], $mailer_config['siteName']);
+          $mail->addReplyTo($mailer_config['replyTo'], $mailer_config['siteName']);
           $mail->addAddress($email, $check['username']);
           $mail->Subject = ' New Password for your ' . $mailer_config['siteName'];
           $mail->isHTML(true);
