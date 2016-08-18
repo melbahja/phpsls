@@ -58,7 +58,7 @@ class Form
 		$_fromid  = $method[$form_id];
 		$_tokenid = $method[$token_name];
 
-		if($this->_referer_valid() === true && $this->session->valid() === true && base64_decode($_fromid) === $this->session->$form_id && $_tokenid === $this->session->$token_name && $_tokenid === md5(base64_decode($_fromid) . md5($name . $_SERVER['HTTP_USER_AGENT'] . $_SERVER['REMOTE_ADDR']))) return true;
+		if($this->session->valid() === true && base64_decode($_fromid) === $this->session->$form_id && $_tokenid === $this->session->$token_name && $_tokenid === md5(base64_decode($_fromid) . md5($name . $_SERVER['HTTP_USER_AGENT'] . $_SERVER['REMOTE_ADDR']))) return true;
 
 		return false;
 	}
@@ -70,23 +70,6 @@ class Form
 	public function valid()
 	{
 		return new Valid();
-	}
-	
-
-	protected function _get_host($url) {
-		preg_match('((http://|https://|www.|)([\w-\d]+).([\w-\d]+))',$url, $host);
-		return $host[2] . '.' . $host[3];
-	}
-
-	protected function _referer_valid()
-	{
-	
-		if(isset($_SERVER['HTTP_REFERER'])) {
-
-			return ($this->_get_host($_SERVER['HTTP_REFERER']) === $this->_get_host($_SERVER['HTTP_HOST']));
-		}
-
-		return true;
 	}
 
 }
